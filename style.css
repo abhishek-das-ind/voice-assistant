@@ -1,0 +1,87 @@
+body {
+    background: black;
+}
+
+.imgDiv {
+    position: relative;
+    width: 100%;
+  }
+  
+  /* Make the image responsive */
+  .imgDiv img {
+    width: 100%;
+    height: auto;
+    align-self: center;
+    background-size: cover;
+  }
+  
+  /* Style the button and place it in the middle of the container/image */
+  .imgDiv .talk {
+    position: absolute;
+    width: 21%;
+    height: 27%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-45%, -54%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    font-family: 'Roboto', sans-serif;
+
+    /* backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(17, 25, 40, 0.75);
+    border: 1px solid rgba(255, 255, 255, 0.125); */
+  }
+  
+  .imgDiv .talk:hover {
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(17, 25, 40, 0.75);
+    border: 1px solid rgba(255, 255, 255, 0.125);
+  }
+
+  .block {
+    position: absolute;
+    width: 21%;
+    height: 27%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-45%, -54%);
+    /* -ms-transform: translate(-50%, -50%); */
+    background-color: rgb(0, 0, 0);
+    color: transparent;
+    font-size: 20px;
+    padding: 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+  
+  .content {
+    position: absolute;
+    width: 90%;
+    height: 15%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 180%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    padding: 20px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Ubuntu', sans-serif;
+  }
+
+  @media only screen and (max-width: 600px) {
+    div {
+      margin-top: 30%;
+    }
+  }
