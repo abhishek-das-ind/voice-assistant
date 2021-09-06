@@ -89,7 +89,7 @@ const pi = [
 ];
 
 const temperature = [
-    'As hot as me! Just kidding!'
+    'As hot as me! Just kidding! '
 ];
 
 const color = [
