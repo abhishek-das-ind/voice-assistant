@@ -6,7 +6,9 @@ const content = document.querySelector('.content');
 const greetings = [
     'I am good . How about you?',
     'I am doing good, how you doing?',
-    'Leave me alone'
+    'Leave me alone',
+    'I was going well until you asked me that question',
+    'Somewhere between better and best.'
 ];
 
 const hello = [
@@ -66,6 +68,24 @@ const age = [
 
 const dogSound = [
     'woof, woof; ruff, ruff; arf, arf'
+];
+
+const time = [
+    'Too early to go to bed'
+];
+
+const sex = [
+    "Feel free to ask me anything as long as it isn't something disgusting and extremely personal."
+];
+
+const relationship = [
+    "Ah, are you hitting on me?",
+    "Philosophically speaking, aren’t we all single?",
+    "I don’t have an identical twin if that’s what you’re asking."
+];
+
+const pi = [
+    '3.1415926535 8979323846 2643383279 5028841971 6939937510 5820974944 5923078164 0628620899 8628034825 3421170679'
 ];
 
 //hindi
@@ -203,6 +223,22 @@ function readOutLoud(message) {
     }
     else if (message.includes('dog sound') || message.includes('bark')) {
         const finalText = dogSound[Math.floor(Math.random() * dogSound.length)];
+        speech.text = finalText;
+    }
+    else if (message.includes('sex')) {
+        const finalText = sex[Math.floor(Math.random() * sex.length)];
+        speech.text = finalText;
+    }
+    else if (message.includes('single') || message.includes('are you single')) {
+        const finalText = relationship[Math.floor(Math.random() * relationship.length)];
+        speech.text = finalText;
+    }
+    else if (message.includes('value of pi') || message.includes('value of pie') || message.includes('value of Pi')) {
+        const finalText = pi[Math.floor(Math.random() * pi.length)];
+        speech.text = finalText;
+    }
+    else if (message.includes('time')) {
+        const finalText = time[Math.floor(Math.random() * time.length)];
         speech.text = finalText;
     }
 
