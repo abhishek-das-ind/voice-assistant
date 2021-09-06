@@ -85,7 +85,7 @@ const relationship = [
 ];
 
 const pi = [
-    '3.1415926535897932384626433832795028841971693993751058209749445923078164062862089986280348253421170679'
+    '3.1415926535897932384626433832795028841971693993751058209749445923078164062862089986280348253421170679 phewwww!'
 ];
 
 const temperature = [
@@ -94,7 +94,15 @@ const temperature = [
 
 const color = [
     'My favourite color is Black.'
-]
+];
+
+const pet = [
+    ' I don’t have any pets. I used to have a few bugs, but they kept getting squashed.'
+];
+
+const girlfriend = [
+    ' I like you…as a friend.'
+];
 
 //hindi
 
@@ -129,11 +137,17 @@ const kavita = [
     'अक्कड़ बक्कड़ बम्बे बो, अस्सी नब्भे पूरे सौ, सौ में लगा धागा, चोर निकल के भागा….',
     'चंदामामा दूर के, पुए पकाएं बूर के, आप खाएं थाली में, मुन्ने को दें प्याली में, प्याली गई टूट, मुन्ना गया रूठ,  लाएंगे नई प्यालियाँ बजा बजा के तालियाँ, मुन्ने को मनाएंगे हम दूध मलाई खाएंगे, चंदामामा …',
     'गोल गोल यह लाल टमाटर, होते जिससे गाल टमाटर, खून बढ़ाता लाल टमाटर, फूर्ति लाल लाल टमाटर, स्वास्थ्या बनाता लाल टमाटर, मस्त बनाता लाल टमाटर, हम खाएँगे लाल टमाटर, बन जाएँगे लाल टमाटर.'
-]
+];
 
-// const hanumanChalisa = [
-//     "Shri Guru Charan Saroj Raj Nij mane mukure sudhar Varnao Raghuvar Vimal Jasu Jo dayaku phal char. Budhi Hin Tanu Janike Sumirau Pavan Kumar Bal budhi Vidya dehu mohe Harahu Kalesa Vikar. Jai Hanuman gyan gun sagar Jai Kapis tihun lok ujagar. Ram doot atulit bal dhama Anjani-putra Pavan sut nama. Mahavir Vikram Bajrangi Kumati nivar sumati Ke sangi. Kanchan varan viraj subesa Kanan Kundal Kunchit Kesa. Hath Vajra Aur Dhuvaje Viraje Kandhe moonj janehu sajai. "
-// ];
+const song = [
+    'आँख में नशा है गहरा है मेरा रंग सुनहरा उसपे ये चाँद सा चेहरा आँखों का है ये पहरा गोरी तू बडा शरमाती है तुझको शरम क्यूँ आती है कातील तेरी निगाहें हैं तू काट कलेजा ले जाती है तुझ में नशा है तू बिलकुल अफीम है धीमे धीमे धीमे धीमे धीमे धीमे धीमे धीमे धीमे धीमे धीमे धीमे धीमे धीमे धीमे धीमे सेट मेरा सीन है सीन हे सीन हे सीन हे सीन हे सीन हे सीन हे',
+    'ऐ ऐ ऐ ऐ यो एव्री बॉडी सैय ऐ ऐ ऐ ऐ यो काली गड्डी काला शीशा काला ऐनक पाया काला चंडीगढ़ तेरे करके आया नइ ते रहन्दा सी अम्बाला मुंडा मैं पंजाबी कुडियां कहन्दी ला ला ला ला कुर्ता पजामा काला काला काला काला काला काला कुर्ता पजामा काला काला काला काला काला काला कुर्ता पजामा काला काला काला काला काला काला कुर्ता पजामा काला काला काला काला काला काला',
+    'सवाली सलोनी अदाएं मन मोहनी तेरी जैसी ब्यूटी किसी की भी नहीं होनी ठंडे की बोतल मैं तेरा ओपनर तुझे गट गट मैं पि लूं . कोका कोला तू.. शोला शोला तू.. कोका कोला तू.. शोला शोला तू.. तू मेरी.. तू मेरी.. दिल की प्यास बूझाना तू मेरी.. तू मेरी.. दिनभर की थकान मिटाना . कोका कोला तू.. शोला शोला तू..'
+];
+
+const hanumanChalisa = [
+    "Shri Guru Charan Saroj Raj Nij mane mukure sudhar Varnao Raghuvar Vimal Jasu Jo dayaku phal char. Budhi Hin Tanu Janike Sumirau Pavan Kumar Bal budhi Vidya dehu mohe Harahu Kalesa Vikar. Jai Hanuman gyan gun sagar Jai Kapis tihun lok ujagar. Ram doot atulit bal dhama Anjani-putra Pavan sut nama. Mahavir Vikram Bajrangi Kumati nivar sumati Ke sangi. Kanchan varan viraj subesa Kanan Kundal Kunchit Kesa. Hath Vajra Aur Dhuvaje Viraje Kandhe moonj janehu sajai. "
+];
 
 
 
@@ -257,13 +271,22 @@ function readOutLoud(message) {
         const finalText = color[Math.floor(Math.random() * color.length)];
         speech.text = finalText;
     }
-
-
-
-    // else if (message.includes('Hanuman Chalisa sunao')) {
-    //     const finalText = hanumanChalisa;
-    //     speech.text = finalText;
-    // }
+    else if (message.includes('will you be my girlfriend') || message.includes('girlfriend')) {
+        const finalText = girlfriend[Math.floor(Math.random() * girlfriend.length)];
+        speech.text = finalText;
+    }
+    else if (message.includes('do you have any pets') || message.includes('pets')) {
+        const finalText = pet[Math.floor(Math.random() * pet.length)];
+        speech.text = finalText;
+    }
+    else if (message.includes('play a music') || message.includes('play a song') || message.includes('song') || message.includes('music')) {
+        const finalText = song[Math.floor(Math.random() * song.length)];
+        speech.text = finalText;
+    }
+    else if (message.includes('Hanuman Chalisa sunao')) {
+        const finalText = hanumanChalisa;
+        speech.text = finalText;
+    }
 
 
     speech.lang = 'hi-IN';
