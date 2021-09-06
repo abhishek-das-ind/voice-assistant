@@ -157,7 +157,7 @@ function readOutLoud(message) {
         const finalText = weatherHindi[Math.floor(Math.random() * weatherHindi.length)];
         speech.text = finalText;
     }
-    else if (message.includes('hello') || message.includes('hi') || message.includes('hey') || message.includes('hai')) {
+    else if (message.includes('hello') || message.includes('hi') || message.includes('hey')) {
         const finalText = hello[Math.floor(Math.random() * hello.length)];
         speech.text = finalText;
     }
@@ -216,7 +216,7 @@ function readOutLoud(message) {
 
     speech.lang = 'hi-IN';
     speech.volume = 1;
-    speech.rate = 0.90;
+    speech.rate = 1;
     speech.pitch = 1;
 
     window.speechSynthesis.speak(speech);
