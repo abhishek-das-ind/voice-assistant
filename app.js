@@ -29,7 +29,7 @@ const nameEnglish = [
 ];
 
 const introductionEnglish = [
-    'hey darling! good to see you here. i am monika. I am your chillin partner. you can have a conversation with me anytime. my master is abhishek. '
+    'Allow me to introduce myself. I am Monika, the virtual artificial intelligence, and I am here to assist you with the variety of tasks as best as I can. Twenty four hours a day, 7 days a week. System is now fully operational.'
 ];
 
 const loveEnglish = [
@@ -85,8 +85,16 @@ const relationship = [
 ];
 
 const pi = [
-    '3.1415926535 8979323846 2643383279 5028841971 6939937510 5820974944 5923078164 0628620899 8628034825 3421170679'
+    '3.1415926535897932384626433832795028841971693993751058209749445923078164062862089986280348253421170679'
 ];
+
+const temperature = [
+    'As hot as me! Just kidding!'
+];
+
+const color = [
+    'My favourite color is Black.'
+]
 
 //hindi
 
@@ -239,6 +247,14 @@ function readOutLoud(message) {
     }
     else if (message.includes('time')) {
         const finalText = time[Math.floor(Math.random() * time.length)];
+        speech.text = finalText;
+    }
+    else if (message.includes('temperature')) {
+        const finalText = temperature[Math.floor(Math.random() * temperature.length)];
+        speech.text = finalText;
+    }
+    else if (message.includes('what is your favourite color') || message.includes('what is your favourite color') || message.includes('favourite colour')) {
+        const finalText = color[Math.floor(Math.random() * color.length)];
         speech.text = finalText;
     }
 
