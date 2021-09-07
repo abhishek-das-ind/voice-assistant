@@ -24,8 +24,7 @@ const weather = [
 ];
 
 const nameEnglish = [
-    'my name is monika. what is your name?',
-    'i am monika. what is your name?'
+    'I am Monika, the virtual artificial intelligence, and I am here to assist you with the variety of tasks as best as I can. Twenty four hours a day, 7 days a week. System is now fully operational.'
 ];
 
 const introductionEnglish = [
@@ -70,9 +69,13 @@ const dogSound = [
     'woof, woof; ruff, ruff; arf, arf'
 ];
 
-const time = [
-    'Too early to go to bed'
-];
+// const time = [
+//     'Too early to go to bed'
+// ];
+
+var today = new Date();
+var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+var date = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate();
 
 const sex = [
     "Feel free to ask me anything as long as it isn't something disgusting and extremely personal."
@@ -85,11 +88,11 @@ const relationship = [
 ];
 
 const pi = [
-    '3.1415926535897932384626433832795028841971693993751058209749445923078164062862089986280348253421170679 phewwww!'
+    '3.1415926535897932384626433832795028841971693993751058209749445923078164062862089986280348253421170679 phew!'
 ];
 
 const temperature = [
-    'As hot as me! Just kidding! '
+    'As hot as me! Just kidding! I dont have the required data right now '
 ];
 
 const color = [
@@ -139,14 +142,42 @@ const kavita = [
     'गोल गोल यह लाल टमाटर, होते जिससे गाल टमाटर, खून बढ़ाता लाल टमाटर, फूर्ति लाल लाल टमाटर, स्वास्थ्या बनाता लाल टमाटर, मस्त बनाता लाल टमाटर, हम खाएँगे लाल टमाटर, बन जाएँगे लाल टमाटर.'
 ];
 
-const song = [
-    'आँख में नशा है गहरा है मेरा रंग सुनहरा उसपे ये चाँद सा चेहरा आँखों का है ये पहरा गोरी तू बडा शरमाती है तुझको शरम क्यूँ आती है कातील तेरी निगाहें हैं तू काट कलेजा ले जाती है तुझ में नशा है तू बिलकुल अफीम है धीमे धीमे धीमे धीमे धीमे धीमे धीमे धीमे धीमे धीमे धीमे धीमे धीमे धीमे धीमे धीमे सेट मेरा सीन है सीन हे सीन हे सीन हे सीन हे सीन हे सीन हे',
-    'ऐ ऐ ऐ ऐ यो एव्री बॉडी सैय ऐ ऐ ऐ ऐ यो काली गड्डी काला शीशा काला ऐनक पाया काला चंडीगढ़ तेरे करके आया नइ ते रहन्दा सी अम्बाला मुंडा मैं पंजाबी कुडियां कहन्दी ला ला ला ला कुर्ता पजामा काला काला काला काला काला काला कुर्ता पजामा काला काला काला काला काला काला कुर्ता पजामा काला काला काला काला काला काला कुर्ता पजामा काला काला काला काला काला काला',
-    'सवाली सलोनी अदाएं मन मोहनी तेरी जैसी ब्यूटी किसी की भी नहीं होनी ठंडे की बोतल मैं तेरा ओपनर तुझे गट गट मैं पि लूं . कोका कोला तू.. शोला शोला तू.. कोका कोला तू.. शोला शोला तू.. तू मेरी.. तू मेरी.. दिल की प्यास बूझाना तू मेरी.. तू मेरी.. दिनभर की थकान मिटाना . कोका कोला तू.. शोला शोला तू..'
+// const song = [
+//     "Sanwali saloni, adayein manmohni, Teri jaisi beauty kisi ki bhi nahi honi, Thande ki bottle main tera opener, Tujhe gat gat main pee loon, Coca Cola tu, Shola shola tu, Coca Cola tu, Shola shola tu, Gym-shym karta hoon tedd mera lean'an, Ni tu boldi ae gallan jive chaldi machine'an, Ni tu chauvi ghante vekhdi'an scooby-dooby-doo, Halle rehnde tu naa boli I love you, Pehle khol le tu botal galiyon peh jave raula yoon,  Ki saare tujhe bole Coca Cola tu, Coca Coca co co co",
+//     'Aankhon mein nasha hai gehra, Hai mera rang sunehra, Uspe yeh chaand sa chehra, Aankhon ka hai yeh pehra, Gori tu bada sharmati hai, Tujhko sharam kyun aati hai,  Qatil teri nigahein hai, Tu kaat kaleja le jaati hai,  Tujh mein nasha hai tu bilkul afeem hai, Dheeme dheeme dheeme dheeme dheeme dheeme dheeme dheeme, Dheeme dheeme dheeme dheeme dheeme dheeme dheeme dheeme, Set mera scene hai, scene hai, scene hai, scene hai, scene hai, scene hai, scene hai',
+//     'Ae ae ae ae o ... ae ae ae ae o, Everybody say,  Ae ae ae ae o ... ae ae ae ae o, Kaali gaddi, kaala sheeshe, kaala ainak, paaya kaala, Chandigarh tere karke aaya nai te rehnda si Ambala, Munda main Punjabi kudiyan kehndi la la la la, Kurta pajama kaala kaala kaala kaala kaala kaala, Kurta pajama kaala kaala kaala kaala kaala kaala, Kurta pajama kaala kaala kaala kaala kaala kaala, Kurta pajama kaala kaala kaala kaala kaala kaala'
+// ];
+
+// const song = [
+//     `${window.location = "https://www.youtube.com/watch?v=kJQP7kiw5Fk"}`
+// ];
+
+// const playYoutube = [
+//     "Shri Guru Charan Saroj Raj Nij mane mukure sudhar Varnao Raghuvar Vimal Jasu Jo dayaku phal char. Budhi Hin Tanu Janike Sumirau Pavan Kumar Bal budhi Vidya dehu mohe Harahu Kalesa Vikar. Jai Hanuman gyan gun sagar Jai Kapis tihun lok ujagar. Ram doot atulit bal dhama Anjani-putra Pavan sut nama. Mahavir Vikram Bajrangi Kumati nivar sumati Ke sangi. Kanchan varan viraj subesa Kanan Kundal Kunchit Kesa. Hath Vajra Aur Dhuvaje Viraje Kandhe moonj janehu sajai. "
+// ];
+
+const playYoutube = [
+    'Playing hanuman chalisa'
 ];
 
-const hanumanChalisa = [
-    "Shri Guru Charan Saroj Raj Nij mane mukure sudhar Varnao Raghuvar Vimal Jasu Jo dayaku phal char. Budhi Hin Tanu Janike Sumirau Pavan Kumar Bal budhi Vidya dehu mohe Harahu Kalesa Vikar. Jai Hanuman gyan gun sagar Jai Kapis tihun lok ujagar. Ram doot atulit bal dhama Anjani-putra Pavan sut nama. Mahavir Vikram Bajrangi Kumati nivar sumati Ke sangi. Kanchan varan viraj subesa Kanan Kundal Kunchit Kesa. Hath Vajra Aur Dhuvaje Viraje Kandhe moonj janehu sajai. "
+// const song = [
+//     'Which genre do you like?'
+// ];
+
+const musicUrl = [
+    // 'https://www.youtube.com/watch?v=kJQP7kiw5Fk',
+    // 'https://www.youtube.com/watch?v=6wNFJIbTxNk',
+    // 'https://www.youtube.com/watch?v=RFx4g4GunYw',
+    // 'https://www.youtube.com/watch?v=gvyUuxdRdR4',
+    // 'https://www.youtube.com/watch?v=PO6nynliE0Q',
+    // 'https://www.youtube.com/watch?v=KVh4KtUSW3A',
+    // 'https://www.youtube.com/watch?v=V7LwfY5U5WI',
+    'https://www.youtube.com/watch?v=D3Yz6J3SucM&list=PLw9jPysgrp6n0-1VC05Eu7nQWxm4Oej4Y',
+    'https://www.youtube.com/watch?v=Vs5sUq4vpbM&list=PLw9jPysgrp6n0-1VC05Eu7nQWxm4Oej4Y&index=2',
+    'https://www.youtube.com/watch?v=YhdBkeEpSnM&list=PLw9jPysgrp6n0-1VC05Eu7nQWxm4Oej4Y&index=3',
+    'https://www.youtube.com/watch?v=ilwTKDdwsWE&list=PLw9jPysgrp6n0-1VC05Eu7nQWxm4Oej4Y&index=4',
+    'https://www.youtube.com/watch?v=Cdys7CdwZac&list=PLw9jPysgrp6n0-1VC05Eu7nQWxm4Oej4Y&index=5',
+    'https://www.youtube.com/watch?v=W3bK5LsDkhM&list=PLw9jPysgrp6n0-1VC05Eu7nQWxm4Oej4Y&index=6'
 ];
 
 
@@ -177,7 +208,8 @@ btn.addEventListener('click', () => {
 function readOutLoud(message) {
     const speech = new SpeechSynthesisUtterance();
 
-    speech.text = "I don't know what you said";
+    speech.text = "अरे! कहना क्या चाहते हो";
+    // var songName = 
 
     if (message.includes('how are you')) {
         const finalText = greetings[Math.floor(Math.random() * greetings.length)];
@@ -260,7 +292,11 @@ function readOutLoud(message) {
         speech.text = finalText;
     }
     else if (message.includes('time')) {
-        const finalText = time[Math.floor(Math.random() * time.length)];
+        const finalText = time;
+        speech.text = finalText;
+    }
+    else if (message.includes('date')) {
+        const finalText = date;
         speech.text = finalText;
     }
     else if (message.includes('temperature')) {
@@ -279,14 +315,31 @@ function readOutLoud(message) {
         const finalText = pet[Math.floor(Math.random() * pet.length)];
         speech.text = finalText;
     }
-    else if (message.includes('play a music') || message.includes('play a song') || message.includes('song') || message.includes('music')) {
-        const finalText = song[Math.floor(Math.random() * song.length)];
+    // else if (message.includes('play a music') || message.includes('play a song') || message.includes('song') || message.includes('music')) {
+    //     const finalText = song[Math.floor(Math.random() * song.length)];
+    //     speech.text = finalText;
+    // }
+    else if (message.includes('rock') || message.includes('Rock')) {
+        const finalText = "playing rock music";
         speech.text = finalText;
+        window.location = "https://www.youtube.com/watch?v=6wNFJIbTxNk";
     }
-    else if (message.includes('Hanuman Chalisa sunao')) {
-        const finalText = hanumanChalisa;
+    else if (message.includes('Hanuman Chalisa sunao') || message.includes('play hanuman chalisa') || message.includes('play Hanuman Chalisa') || message.includes('hanuman chalisa') || message.includes('Hanuman Chalisa')) {
+        const finalText = playYoutube[Math.floor(Math.random() * playYoutube.length)];
         speech.text = finalText;
+        window.location = "https://www.youtube.com/watch?v=AETFvQonfV8";
     }
+    else if (message.includes('play a music') || message.includes('music')) {
+        const finalText = "playing music from my favourite lists on you tube";
+        speech.text = finalText;
+        window.location = musicUrl[Math.floor(Math.random() * musicUrl.length)];
+    }
+    else if (message.includes('play a song') || message.includes('song')) {
+        const finalText = "playing song from my favourite lists on you tube";
+        speech.text = finalText;
+        window.location = musicUrl[Math.floor(Math.random() * musicUrl.length)];
+    }
+
 
 
     speech.lang = 'hi-IN';
