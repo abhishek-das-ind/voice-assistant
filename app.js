@@ -24,11 +24,11 @@ const weather = [
 ];
 
 const nameEnglish = [
-    'I am Monika, the virtual artificial intelligence, and I am here to assist you with the variety of tasks as best as I can. Twenty four hours a day, 7 days a week. System is now fully operational.'
+    'I am Monika, the virtual artificial intelligence, made by Abhishek, and I am here to assist you with the variety of tasks as best as I can. Twenty four hours a day, 7 days a week. System is now fully operational.'
 ];
 
 const introductionEnglish = [
-    'Allow me to introduce myself. I am Monika, the virtual artificial intelligence, and I am here to assist you with the variety of tasks as best as I can. Twenty four hours a day, 7 days a week. System is now fully operational.'
+    'Allow me to introduce myself. I am Monika, the virtual artificial intelligence, made by Abhishek, and I am here to assist you with the variety of tasks as best as I can. Twenty four hours a day, 7 days a week. System is now fully operational.'
 ];
 
 const loveEnglish = [
@@ -251,7 +251,7 @@ function readOutLoud(message) {
         const finalText = introductionHindi;
         speech.text = finalText;
     }
-    else if (message.includes('tell me a joke')) {
+    else if (message.includes('tell me a joke') || message.includes('joke')) {
         const finalText = jokeEnglish[Math.floor(Math.random() * jokeEnglish.length)];
         speech.text = finalText;
     }
@@ -319,11 +319,11 @@ function readOutLoud(message) {
     //     const finalText = song[Math.floor(Math.random() * song.length)];
     //     speech.text = finalText;
     // }
-    else if (message.includes('rock') || message.includes('Rock')) {
-        const finalText = "playing rock music";
-        speech.text = finalText;
-        window.location = "https://www.youtube.com/watch?v=6wNFJIbTxNk";
-    }
+    // else if (message.includes('rock') || message.includes('Rock')) {
+    //     const finalText = "playing rock music";
+    //     speech.text = finalText;
+    //     window.location = "https://www.youtube.com/watch?v=6wNFJIbTxNk";
+    // }
     else if (message.includes('Hanuman Chalisa sunao') || message.includes('play hanuman chalisa') || message.includes('play Hanuman Chalisa') || message.includes('hanuman chalisa') || message.includes('Hanuman Chalisa')) {
         const finalText = playYoutube[Math.floor(Math.random() * playYoutube.length)];
         speech.text = finalText;
