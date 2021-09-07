@@ -208,7 +208,7 @@ btn.addEventListener('click', () => {
 function readOutLoud(message) {
     const speech = new SpeechSynthesisUtterance();
 
-    speech.text = "अरे! कहना क्या चाहते हो";
+    speech.text = "Arre! kehna kya chahte ho";
     // var songName = 
 
     if (message.includes('how are you')) {
