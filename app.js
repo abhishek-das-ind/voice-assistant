@@ -24,11 +24,11 @@ const weather = [
 ];
 
 const nameEnglish = [
-    'I am Monika, the virtual artificial intelligence, made by Abhishek, and I am here to assist you with the variety of tasks as best as I can. Twenty four hours a day, 7 days a week. System is now fully operational.'
+    'I am Monika, the virtual artificial intelligence, created by Abhishek, and I am here to assist you with the variety of tasks as best as I can. Twenty four hours a day, 7 days a week.'
 ];
 
 const introductionEnglish = [
-    'Allow me to introduce myself. I am Monika, the virtual artificial intelligence, made by Abhishek, and I am here to assist you with the variety of tasks as best as I can. Twenty four hours a day, 7 days a week. System is now fully operational.'
+    'Allow me to introduce myself. I am Monika, the virtual artificial intelligence, created by Abhishek, and I am here to assist you with the variety of tasks as best as I can. twenty four hours a day, 7 days a week.'
 ];
 
 const loveEnglish = [
@@ -204,6 +204,11 @@ btn.addEventListener('click', () => {
     recognition.start();
 });
 
+//sounds
+
+var dog = new Audio('./dog_barking.mp3');
+var cat = new Audio('./cats_meowing.mp3');
+
 
 function readOutLoud(message) {
     const speech = new SpeechSynthesisUtterance();
@@ -211,7 +216,7 @@ function readOutLoud(message) {
     speech.text = "Arre! kehna kya chahte ho";
     // var songName = 
 
-    if (message.includes('how are you')) {
+    if (message.includes('how are you') || message.includes('how you doing')) {
         const finalText = greetings[Math.floor(Math.random() * greetings.length)];
         speech.text = finalText;
     }
@@ -276,8 +281,12 @@ function readOutLoud(message) {
         speech.text = finalText;
     }
     else if (message.includes('dog sound') || message.includes('bark')) {
-        const finalText = dogSound[Math.floor(Math.random() * dogSound.length)];
-        speech.text = finalText;
+        dog.play();
+        speech.text = " ";
+    }
+    else if (message.includes('cat sound') || message.includes('meow')) {
+        cat.play();
+        speech.text = " ";
     }
     else if (message.includes('sex')) {
         const finalText = sex[Math.floor(Math.random() * sex.length)];
@@ -295,7 +304,7 @@ function readOutLoud(message) {
         const finalText = time;
         speech.text = finalText;
     }
-    else if (message.includes('date')) {
+    else if (message.includes('date today') || message.includes("what is today's date") || message.includes('today date') || message.includes("today's date")) {
         const finalText = date;
         speech.text = finalText;
     }
@@ -338,6 +347,12 @@ function readOutLoud(message) {
         const finalText = "playing song from my favourite lists on you tube";
         speech.text = finalText;
         window.location = musicUrl[Math.floor(Math.random() * musicUrl.length)];
+    }
+    else if (message.includes('search') || message.includes('Search')) {
+        const finalText = 'here what i found';
+        speech.text = finalText;
+        const finalMessage = message.substring(6);
+        window.location = `https://www.google.com/search?q=${finalMessage}`;
     }
 
 

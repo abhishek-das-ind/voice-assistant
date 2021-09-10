@@ -17,15 +17,48 @@
 </head>
 
 <body>
+    <h1 class="head">Tap the mic (🎙️) button and start speaking (🗣)</h1>
     <div class="imgDiv">
         <img src="https://i.pinimg.com/originals/97/33/c9/9733c9dc8b89bf38b692282f2df9ce6a.gif" alt="">
         <button class="block">My name is</button>
-        <button class="talk">Tap!</button>
+        <button class="talk" id="btn" onclick="audio.play()"><img style="width: 50%;"
+                src="https://www.svgrepo.com/show/181081/microphone-technology.svg" alt=""></button>
         <button class="content"></button>
+    </div>
+    <div class="container">
+        <div class="afterMain">
+            <h3>About Me</h3>
+            I am in developing stage currently but still feel free to ask anything, I will give my very best. <br>
+            You can ask "introduce yourself" to know more about me.
+        </div>
+
+        <div class="tips">
+            <h3 style="margin-bottom: 0.5;">Tips:</h3>
+
+            <p style="margin-top: 0;">
+                if you say 'search' before any statement then it will redirect you to google
+            </p>
+        </div>
+
+        <div class="footer">
+            <footer>
+                <h3>Contact details</h3>
+                <a href="https://instagram.com/overtimeabhi?utm_medium=copy_link"><img
+                        style="width: 35px; padding-bottom: 10px;"
+                        src="https://img-premium.flaticon.com/png/512/1377/premium/1377231.png?token=exp=1631253920~hmac=409ef6f48595e9311e4402fef63f0f67"
+                        alt=""></a>
+            </footer>
+        </div>
     </div>
 
 
 
+
+
+    <script>
+        const audio = new Audio();
+        audio.src = "./facebook_pop_up.mp3"
+    </script>
 
 
     <script src="app.js"></script>

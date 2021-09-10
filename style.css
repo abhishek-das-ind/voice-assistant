@@ -1,5 +1,6 @@
-body {
+html,body {
     background: black;
+    height: 100vh;
 }
 
 .imgDiv {
@@ -80,8 +81,37 @@ body {
     font-family: 'Ubuntu', sans-serif;
   }
 
-  @media only screen and (max-width: 600px) {
+  /* @media only screen and (max-width: 600px) {
     div {
       margin-top: 30%;
     }
+  } */
+
+  .head {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: medium;
+  }
+
+  .afterMain {
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    background-color: #232b2b;
+    padding-bottom: 10px;
+  }
+
+  .footer {
+    background-color:#3b444b;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .tips {
+    background-color: #353839;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
   }
