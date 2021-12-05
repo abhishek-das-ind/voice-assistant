@@ -12,10 +12,9 @@ const greetings = [
 ];
 
 const hello = [
-    'heyy dear',
-    'hi dear',
-    'hello dear',
-    'hey wassup!'
+    'Hey, stranger. Stop being a stranger',
+    'Hello darling, Hope you’re having a good day!',
+    'Hii darling! I suck at starting conversations.'
 ];
 
 const weather = [
@@ -24,7 +23,7 @@ const weather = [
 ];
 
 const nameEnglish = [
-    'I am Monika, the virtual artificial intelligence, created by Abhishek, and I am here to assist you with the variety of tasks as best as I can. Twenty four hours a day, 7 days a week.'
+    'I am Bijli, the virtual artificial intelligence, created by Abhishek, and I am here to assist you with the variety of tasks as best as I can. Twenty four hours a day, 7 days a week.'
 ];
 
 const introductionEnglish = [
@@ -110,7 +109,7 @@ const girlfriend = [
 //hindi
 
 const nameHindi = [
-    'mera naam monika hain. apka naam kya hai?'
+    'mera naam Bijli hain. apka naam kya hai?'
 ];
 
 const weatherHindi = [
