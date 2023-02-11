@@ -181,6 +181,7 @@ const musicUrl = [
 
 
 
+
 const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
 const recognition = new SpeechRecognition();
 
@@ -352,6 +353,12 @@ function readOutLoud(message) {
         speech.text = finalText;
         const finalMessage = message.substring(6);
         window.location = `https://www.google.com/search?q=${finalMessage}`;
+    }
+    else if(message.includes('open') || message.includes('Open')) {
+        const finalMessage = message.substring(5);
+        const finalText = `opening ${finalMessage}`;
+        speech.text = finalText;
+        window.location = `https://www.${finalMessage}.com`;
     }
 
 
