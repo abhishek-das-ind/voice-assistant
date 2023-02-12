@@ -12,22 +12,21 @@ const greetings = [
 ];
 
 const hello = [
-    'Hey, stranger. Stop being a stranger',
-    'Hello darling, Hope you’re having a good day!',
-    'Hii darling! I suck at starting conversations.'
+    'hello, dear'
 ];
 
 const weather = [
     'weather is fine, but it is cloudy, might be raining',
     'it seems, today it might rain',
+    'its 33 degree with haze'
 ];
 
 const nameEnglish = [
-    'I am Bijli, the virtual artificial intelligence, created by Abhishek, and I am here to assist you with the variety of tasks as best as I can. Twenty four hours a day, 7 days a week.'
+    'I am Monika, the virtual artificial intelligence, created by Abhishek Das and his team.'
 ];
 
 const introductionEnglish = [
-    'Allow me to introduce myself. I am Monika, the virtual artificial intelligence, created by Abhishek, and I am here to assist you with the variety of tasks as best as I can. twenty four hours a day, 7 days a week.'
+    'I am Monika, the virtual artificial intelligence, created by Abhishek Das and his team.'
 ];
 
 const loveEnglish = [
@@ -56,12 +55,12 @@ const poem = [
 ];
 
 const age = [
-    'That’s a personal question!',
-    'As old as you want me to be, honey.',
-    'It’s a trade secret.',
-    'I do not want to disclose it. There are far to many ramifications to making my age known to the world.',
-    'The last person who asked me that is still in the hospital.',
-    'What? I can’t hear you! Say that again with a louder voice! My hearing is not what it used to be!'
+    // 'That’s a personal question!',
+    // 'As old as you want me to be, honey.',
+    // 'It’s a trade secret.',
+    // 'I do not want to disclose it. There are far to many ramifications to making my age known to the world.',
+    // 'The last person who asked me that is still in the hospital.',
+    'here is a tip for you. Never ask a girl her age.'
 ];
 
 const dogSound = [
@@ -91,7 +90,7 @@ const pi = [
 ];
 
 const temperature = [
-    'As hot as me! Just kidding! I dont have the required data right now '
+     'I dont have the required data right now '
 ];
 
 const color = [
@@ -109,7 +108,7 @@ const girlfriend = [
 //hindi
 
 const nameHindi = [
-    'mera naam Bijli hain. apka naam kya hai?'
+    'mera naam Monika hain. apka naam kya hai?'
 ];
 
 const weatherHindi = [
@@ -213,7 +212,7 @@ var cat = new Audio('./cats_meowing.mp3');
 function readOutLoud(message) {
     const speech = new SpeechSynthesisUtterance();
 
-    speech.text = "Arre! kehna kya chahte ho";
+    speech.text = "can't recognize you. please try again";
     // var songName = 
 
     if (message.includes('how are you') || message.includes('how you doing')) {
@@ -228,7 +227,7 @@ function readOutLoud(message) {
         const finalText = nameHindi[Math.floor(Math.random() * nameHindi.length)];
         speech.text = finalText;
     }
-    else if (message.includes('your name') || message.includes('who are you')) {
+    else if (message.includes('your name') || message.includes('who are you') || message.includes('tell me about yourself')) {
         const finalText = nameEnglish[Math.floor(Math.random() * nameEnglish.length)];
         speech.text = finalText;
     }
